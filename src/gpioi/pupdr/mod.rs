@@ -40,180 +40,105 @@ impl super::PUPDR {
         self.write(|w| w)
     }
 }
-#[doc = r" Value of the field"]
-pub struct PUPDR15R {
-    bits: u8,
+#[doc = "Possible values of the field `PUPDR15`"]
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub enum PUPDR15R {
+    #[doc = "No pull-up, pull-down"]
+    NOPULL,
+    #[doc = "Pull-up"]
+    PULLUP,
+    #[doc = "Pull-down"]
+    PULLDOWN,
+    #[doc = r" Reserved"]
+    _Reserved(u8),
 }
 impl PUPDR15R {
     #[doc = r" Value of the field as raw bits"]
     #[inline]
     pub fn bits(&self) -> u8 {
-        self.bits
+        match *self {
+            PUPDR15R::NOPULL => 0,
+            PUPDR15R::PULLUP => 1,
+            PUPDR15R::PULLDOWN => 2,
+            PUPDR15R::_Reserved(bits) => bits,
+        }
+    }
+    #[allow(missing_docs)]
+    #[doc(hidden)]
+    #[inline]
+    pub fn _from(value: u8) -> PUPDR15R {
+        match value {
+            0 => PUPDR15R::NOPULL,
+            1 => PUPDR15R::PULLUP,
+            2 => PUPDR15R::PULLDOWN,
+            i => PUPDR15R::_Reserved(i),
+        }
+    }
+    #[doc = "Checks if the value of the field is `NOPULL`"]
+    #[inline]
+    pub fn is_no_pull(&self) -> bool {
+        *self == PUPDR15R::NOPULL
+    }
+    #[doc = "Checks if the value of the field is `PULLUP`"]
+    #[inline]
+    pub fn is_pull_up(&self) -> bool {
+        *self == PUPDR15R::PULLUP
+    }
+    #[doc = "Checks if the value of the field is `PULLDOWN`"]
+    #[inline]
+    pub fn is_pull_down(&self) -> bool {
+        *self == PUPDR15R::PULLDOWN
     }
 }
-#[doc = r" Value of the field"]
-pub struct PUPDR14R {
-    bits: u8,
+#[doc = "Possible values of the field `PUPDR14`"]
+pub type PUPDR14R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR13`"]
+pub type PUPDR13R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR12`"]
+pub type PUPDR12R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR11`"]
+pub type PUPDR11R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR10`"]
+pub type PUPDR10R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR9`"]
+pub type PUPDR9R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR8`"]
+pub type PUPDR8R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR7`"]
+pub type PUPDR7R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR6`"]
+pub type PUPDR6R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR5`"]
+pub type PUPDR5R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR4`"]
+pub type PUPDR4R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR3`"]
+pub type PUPDR3R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR2`"]
+pub type PUPDR2R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR1`"]
+pub type PUPDR1R = PUPDR15R;
+#[doc = "Possible values of the field `PUPDR0`"]
+pub type PUPDR0R = PUPDR15R;
+#[doc = "Values that can be written to the field `PUPDR15`"]
+pub enum PUPDR15W {
+    #[doc = "No pull-up, pull-down"]
+    NOPULL,
+    #[doc = "Pull-up"]
+    PULLUP,
+    #[doc = "Pull-down"]
+    PULLDOWN,
 }
-impl PUPDR14R {
-    #[doc = r" Value of the field as raw bits"]
+impl PUPDR15W {
+    #[allow(missing_docs)]
+    #[doc(hidden)]
     #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR13R {
-    bits: u8,
-}
-impl PUPDR13R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR12R {
-    bits: u8,
-}
-impl PUPDR12R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR11R {
-    bits: u8,
-}
-impl PUPDR11R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR10R {
-    bits: u8,
-}
-impl PUPDR10R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR9R {
-    bits: u8,
-}
-impl PUPDR9R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR8R {
-    bits: u8,
-}
-impl PUPDR8R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR7R {
-    bits: u8,
-}
-impl PUPDR7R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR6R {
-    bits: u8,
-}
-impl PUPDR6R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR5R {
-    bits: u8,
-}
-impl PUPDR5R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR4R {
-    bits: u8,
-}
-impl PUPDR4R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR3R {
-    bits: u8,
-}
-impl PUPDR3R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR2R {
-    bits: u8,
-}
-impl PUPDR2R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR1R {
-    bits: u8,
-}
-impl PUPDR1R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
-    }
-}
-#[doc = r" Value of the field"]
-pub struct PUPDR0R {
-    bits: u8,
-}
-impl PUPDR0R {
-    #[doc = r" Value of the field as raw bits"]
-    #[inline]
-    pub fn bits(&self) -> u8 {
-        self.bits
+    pub fn _bits(&self) -> u8 {
+        match *self {
+            PUPDR15W::NOPULL => 0,
+            PUPDR15W::PULLUP => 1,
+            PUPDR15W::PULLDOWN => 2,
+        }
     }
 }
 #[doc = r" Proxy"]
@@ -221,6 +146,26 @@ pub struct _PUPDR15W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR15W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR15W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -231,11 +176,33 @@ impl<'a> _PUPDR15W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR14`"]
+pub type PUPDR14W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR14W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR14W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR14W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -246,11 +213,33 @@ impl<'a> _PUPDR14W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR13`"]
+pub type PUPDR13W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR13W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR13W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR13W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -261,11 +250,33 @@ impl<'a> _PUPDR13W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR12`"]
+pub type PUPDR12W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR12W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR12W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR12W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -276,11 +287,33 @@ impl<'a> _PUPDR12W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR11`"]
+pub type PUPDR11W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR11W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR11W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR11W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -291,11 +324,33 @@ impl<'a> _PUPDR11W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR10`"]
+pub type PUPDR10W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR10W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR10W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR10W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -306,11 +361,33 @@ impl<'a> _PUPDR10W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR9`"]
+pub type PUPDR9W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR9W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR9W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR9W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -321,11 +398,33 @@ impl<'a> _PUPDR9W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR8`"]
+pub type PUPDR8W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR8W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR8W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR8W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -336,11 +435,33 @@ impl<'a> _PUPDR8W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR7`"]
+pub type PUPDR7W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR7W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR7W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR7W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -351,11 +472,33 @@ impl<'a> _PUPDR7W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR6`"]
+pub type PUPDR6W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR6W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR6W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR6W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -366,11 +509,33 @@ impl<'a> _PUPDR6W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR5`"]
+pub type PUPDR5W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR5W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR5W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR5W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -381,11 +546,33 @@ impl<'a> _PUPDR5W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR4`"]
+pub type PUPDR4W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR4W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR4W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR4W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -396,11 +583,33 @@ impl<'a> _PUPDR4W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR3`"]
+pub type PUPDR3W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR3W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR3W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR3W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -411,11 +620,33 @@ impl<'a> _PUPDR3W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR2`"]
+pub type PUPDR2W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR2W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR2W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR2W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -426,11 +657,33 @@ impl<'a> _PUPDR2W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR1`"]
+pub type PUPDR1W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR1W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR1W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR1W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -441,11 +694,33 @@ impl<'a> _PUPDR1W<'a> {
         self.w
     }
 }
+#[doc = "Values that can be written to the field `PUPDR0`"]
+pub type PUPDR0W = PUPDR15W;
 #[doc = r" Proxy"]
 pub struct _PUPDR0W<'a> {
     w: &'a mut W,
 }
 impl<'a> _PUPDR0W<'a> {
+    #[doc = r" Writes `variant` to the field"]
+    #[inline]
+    pub fn variant(self, variant: PUPDR0W) -> &'a mut W {
+        unsafe { self.bits(variant._bits()) }
+    }
+    #[doc = "No pull-up, pull-down"]
+    #[inline]
+    pub fn no_pull(self) -> &'a mut W {
+        self.variant(PUPDR15W::NOPULL)
+    }
+    #[doc = "Pull-up"]
+    #[inline]
+    pub fn pull_up(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLUP)
+    }
+    #[doc = "Pull-down"]
+    #[inline]
+    pub fn pull_down(self) -> &'a mut W {
+        self.variant(PUPDR15W::PULLDOWN)
+    }
     #[doc = r" Writes raw bits to the field"]
     #[inline]
     pub unsafe fn bits(self, value: u8) -> &'a mut W {
@@ -465,162 +740,146 @@ impl R {
     #[doc = "Bits 30:31 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr15(&self) -> PUPDR15R {
-        let bits = {
+        PUPDR15R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 30;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR15R { bits }
+        })
     }
     #[doc = "Bits 28:29 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr14(&self) -> PUPDR14R {
-        let bits = {
+        PUPDR14R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 28;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR14R { bits }
+        })
     }
     #[doc = "Bits 26:27 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr13(&self) -> PUPDR13R {
-        let bits = {
+        PUPDR13R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 26;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR13R { bits }
+        })
     }
     #[doc = "Bits 24:25 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr12(&self) -> PUPDR12R {
-        let bits = {
+        PUPDR12R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 24;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR12R { bits }
+        })
     }
     #[doc = "Bits 22:23 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr11(&self) -> PUPDR11R {
-        let bits = {
+        PUPDR11R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 22;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR11R { bits }
+        })
     }
     #[doc = "Bits 20:21 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr10(&self) -> PUPDR10R {
-        let bits = {
+        PUPDR10R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 20;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR10R { bits }
+        })
     }
     #[doc = "Bits 18:19 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr9(&self) -> PUPDR9R {
-        let bits = {
+        PUPDR9R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 18;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR9R { bits }
+        })
     }
     #[doc = "Bits 16:17 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr8(&self) -> PUPDR8R {
-        let bits = {
+        PUPDR8R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 16;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR8R { bits }
+        })
     }
     #[doc = "Bits 14:15 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr7(&self) -> PUPDR7R {
-        let bits = {
+        PUPDR7R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 14;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR7R { bits }
+        })
     }
     #[doc = "Bits 12:13 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr6(&self) -> PUPDR6R {
-        let bits = {
+        PUPDR6R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 12;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR6R { bits }
+        })
     }
     #[doc = "Bits 10:11 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr5(&self) -> PUPDR5R {
-        let bits = {
+        PUPDR5R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 10;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR5R { bits }
+        })
     }
     #[doc = "Bits 8:9 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr4(&self) -> PUPDR4R {
-        let bits = {
+        PUPDR4R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 8;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR4R { bits }
+        })
     }
     #[doc = "Bits 6:7 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr3(&self) -> PUPDR3R {
-        let bits = {
+        PUPDR3R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 6;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR3R { bits }
+        })
     }
     #[doc = "Bits 4:5 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr2(&self) -> PUPDR2R {
-        let bits = {
+        PUPDR2R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 4;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR2R { bits }
+        })
     }
     #[doc = "Bits 2:3 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr1(&self) -> PUPDR1R {
-        let bits = {
+        PUPDR1R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 2;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR1R { bits }
+        })
     }
     #[doc = "Bits 0:1 - Port x configuration bits (y = 0..15)"]
     #[inline]
     pub fn pupdr0(&self) -> PUPDR0R {
-        let bits = {
+        PUPDR0R::_from({
             const MASK: u8 = 3;
             const OFFSET: u8 = 0;
             ((self.bits >> OFFSET) & MASK as u32) as u8
-        };
-        PUPDR0R { bits }
+        })
     }
 }
 impl W {

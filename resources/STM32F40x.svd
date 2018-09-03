@@ -7814,6 +7814,24 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues>
+                <name>PUPD</name>
+                <enumeratedValue>
+                  <name>NoPull</name>
+                  <description>No pull-up, pull-down</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullUp</name>
+                  <description>Pull-up</description>
+                  <value>1</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullDown</name>
+                  <description>Pull-down</description>
+                  <value>2</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
             <field>
               <name>PUPDR14</name>
@@ -7821,6 +7839,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>28</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR13</name>
@@ -7828,6 +7848,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>26</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR12</name>
@@ -7835,6 +7857,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>24</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR11</name>
@@ -7842,6 +7866,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR10</name>
@@ -7849,6 +7875,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR9</name>
@@ -7856,6 +7884,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>18</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR8</name>
@@ -7863,6 +7893,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR7</name>
@@ -7870,6 +7902,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR6</name>
@@ -7877,6 +7911,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR5</name>
@@ -7884,6 +7920,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR4</name>
@@ -7891,6 +7929,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR3</name>
@@ -7898,6 +7938,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR2</name>
@@ -7905,6 +7947,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR1</name>
@@ -7912,6 +7956,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR0</name>
@@ -7919,6 +7965,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -9229,6 +9277,24 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues>
+                <name>PUPD</name>
+                <enumeratedValue>
+                  <name>NoPull</name>
+                  <description>No pull-up, pull-down</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullUp</name>
+                  <description>Pull-up</description>
+                  <value>1</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullDown</name>
+                  <description>Pull-down</description>
+                  <value>2</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
             <field>
               <name>PUPDR14</name>
@@ -9236,6 +9302,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>28</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR13</name>
@@ -9243,6 +9311,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>26</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR12</name>
@@ -9250,6 +9320,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>24</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR11</name>
@@ -9257,6 +9329,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR10</name>
@@ -9264,6 +9338,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR9</name>
@@ -9271,6 +9347,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>18</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR8</name>
@@ -9278,6 +9356,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR7</name>
@@ -9285,6 +9365,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR6</name>
@@ -9292,6 +9374,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR5</name>
@@ -9299,6 +9383,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR4</name>
@@ -9306,6 +9392,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR3</name>
@@ -9313,6 +9401,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR2</name>
@@ -9320,6 +9410,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR1</name>
@@ -9327,6 +9419,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR0</name>
@@ -9334,6 +9428,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -10620,6 +10716,24 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>30</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues>
+                <name>PUPD</name>
+                <enumeratedValue>
+                  <name>NoPull</name>
+                  <description>No pull-up, pull-down</description>
+                  <value>0</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullUp</name>
+                  <description>Pull-up</description>
+                  <value>1</value>
+                </enumeratedValue>
+                <enumeratedValue>
+                  <name>PullDown</name>
+                  <description>Pull-down</description>
+                  <value>2</value>
+                </enumeratedValue>
+              </enumeratedValues>
             </field>
             <field>
               <name>PUPDR14</name>
@@ -10627,6 +10741,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>28</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR13</name>
@@ -10634,6 +10750,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>26</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR12</name>
@@ -10641,6 +10759,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>24</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR11</name>
@@ -10648,6 +10768,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>22</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR10</name>
@@ -10655,6 +10777,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR9</name>
@@ -10662,6 +10786,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>18</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR8</name>
@@ -10669,6 +10795,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>16</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR7</name>
@@ -10676,6 +10804,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>14</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR6</name>
@@ -10683,6 +10813,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>12</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR5</name>
@@ -10690,6 +10822,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>10</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR4</name>
@@ -10697,6 +10831,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>8</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR3</name>
@@ -10704,6 +10840,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>6</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR2</name>
@@ -10711,6 +10849,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>4</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR1</name>
@@ -10718,6 +10858,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>2</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
             <field>
               <name>PUPDR0</name>
@@ -10725,6 +10867,8 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               0..15)</description>
               <bitOffset>0</bitOffset>
               <bitWidth>2</bitWidth>
+              <enumeratedValues derivedFrom="PUPD">
+	      </enumeratedValues>
             </field>
           </fields>
         </register>
@@ -35334,7 +35478,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
           </fields>
 		</register>
-		
+
 		<register>
           <name>F7R1</name>
           <displayName>F7R1</displayName>
